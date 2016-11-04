@@ -68,12 +68,7 @@ describe('macaca desktop sample', function() {
     return driver
 	  .elementByLinkText("合约购机")
 	  .click()
-	  .sleep(3000)
-      .source()
-      .then(function(html) {
-        html.should.containEql('合约购机');
-      })
-      .close();
+	  .sleep(3000);   
   });
 
   after((done) => {
